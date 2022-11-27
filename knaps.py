@@ -23,7 +23,7 @@ from sklearn.utils.validation import joblib
 
 st.title("Data Mining")
 st.write("Nama  : Aisyiyah Maulana Wibawati")
-st.write("NIM : 200411100122")
+st.write("Kelas : 200411100122")
 upload_data, preporcessing, modeling, implementation = st.tabs(["Upload Data", "Prepocessing", "Modeling", "Implementation"])
 
 
@@ -33,7 +33,7 @@ with upload_data:
     st.write("Total datanya adalah 5110 dengan data training 80% (4088) dan data testing 20% (1022)")
     uploaded_files = st.file_uploader("Upload file CSV", accept_multiple_files=True)
     for uploaded_file in uploaded_files:
-        df = pd.read_csv(uploaded_file, sep='https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/cardio_train.csv')
+        df = pd.read_csv(uploaded_file, sep=';')
         st.write("Nama File Anda = ", uploaded_file.name)
         st.dataframe(df)
 
