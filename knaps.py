@@ -10,8 +10,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
-# import warnings
-# warnings.filterwarnings("ignore")
+
 
 
 st.title("PENAMBANGAN DATA B")
@@ -69,11 +68,7 @@ with data_set_description:
     st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/08-Ahlaqul-Karimah/project-data-mining ")
 
 with upload_data:
-    # uploaded_files = st.file_uploader("Upload file CSV", accept_multiple_files=True)
-    # for uploaded_file in uploaded_files:
-    #     df = pd.read_csv(uploaded_file)
-    #     st.write("Nama File Anda = ", uploaded_file.name)
-    #     st.dataframe(df)
+
     df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/indian_liver_patient.csv')
     st.dataframe(df)
 
@@ -240,10 +235,16 @@ with modeling:
 with implementation:
     with st.form("my_form"):
         st.subheader("Implementasi")
-        Weight = st.number_input('Masukkan berat ikan (Weight) : ')
-        Length1 = st.number_input('Masukkan panjang vertikal ikan (Length1) : ')
-        Height = st.number_input('Masukkan tinggi ikan (Height) : ')
-        Width = st.number_input('Masukkan lebar ikan (Width) : ')
+        Age = st.number_input('Masukkan berat ikan (Weight) : ')
+        Gender = st.number_input('Masukkan panjang vertikal ikan (Length1) : ')
+        Total_Bilirubin = st.number_input('Masukkan tinggi ikan (Height) : ')
+        Direct_Bilirubin = st.number_input('Masukkan lebar ikan (Width) : ')
+        Alkaline_Phosphotase = st.number_input('Masukkan lebar ikan (Width) : ')
+        Alamine_Aminotransferase = st.number_input('Masukkan lebar ikan (Width) : ')
+        Aspartate_Aminotransferase = st.number_input('Masukkan lebar ikan (Width) : ')
+        Total_Protiens = st.number_input('Masukkan lebar ikan (Width) : ')
+        Albumin = st.number_input('Masukkan lebar ikan (Width) : ')
+        Albumin_And_Globulin_Ratio = st.number_input('Masukkan lebar ikan (Width) : ')
         
         model = st.selectbox('Pilihlah model yang akan anda gunakan untuk melakukan prediksi?',
                 ('Gaussian Naive Bayes', 'K-NN', 'Decision Tree'))
@@ -251,10 +252,17 @@ with implementation:
         prediksi = st.form_submit_button("Submit")
         if prediksi:
             inputs = np.array([
-                Weight,
-                Length1,
-                Height,
-                Width
+                Age,
+                Gender,
+                Total_Bilirubin,
+                Direct_Bilirubin,
+                Alkaline_Phosphotase,
+                Alamine_Aminotransferase,
+                Aspartate_Aminotransferase,
+                Total_Protiens,
+                Albumin,
+                Albumin_And_Globulin_Ratio,
+                
             ])
 
             df_min = X.min()
