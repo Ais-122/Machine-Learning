@@ -25,14 +25,13 @@ with data_set_description:
     st.write("###### Data set ini Adalah : Classification on Indian Liver Patient (Klasifikasi Pasien Liver India) ")
     st.write("###### Sumber Data Set dari Kaggle : https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/indian_liver_patient.csv")
     st.write("""###### Penjelasan setiap kolom : """)
-    st.write("""1. Age (Umur ) :
-    
-    Umur :Umur atau usia pada manusia adalah waktu yang terlewat sejak kelahiran. Semisal, umur manusia dikatakan lima belas tahun diukur sejak dia lahir hingga waktu umur itu dihitung.""")
-    st.write("""2. weight (Bobot) :
-    bobot : bobot yang di ada di dataset
+    st.write("""1. Age (Umur ) : 
+    Umur atau usia pada manusia adalah waktu yang terlewat sejak kelahiran. Semisal, umur manusia dikatakan lima belas tahun diukur sejak dia lahir hingga waktu umur itu dihitung.""")
+    st.write("""2. Gender (Jenis Kelamin) : 
+    Gender atau jantina adalah serangkaian karakteristik yang terikat kepada dan membedakan maskulinitas dan femininitas. Karakteristik tersebut dapat mencakup jenis kelamin, hal yang ditentukan berdasarkan jenis kelamin, atau identitas gender.
     """)
-    st.write("""3. length1 (Panjang1) :
-    panjang1 : panjang ikan yang ada  di dataset
+    st.write("""3. Total_Bilirubin (Bilirubin Total) :
+    Cek bilirubin total adalah suatu pemeriksaan yang dilakukan untuk mengukur jumlah total bilirubin yang ada di dalam darah. Tes ini bertujuan untuk mengevaluasi fungsi hati atau membantu mendiagnosis anemia yang disebabkan oleh kerusakan sel darah merah (anemia hemolitik).
     """)
     st.write("""4. length1 (Panjang2) :
     panjang2 : panjang ikan yang ada  di dataset
