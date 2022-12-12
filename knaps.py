@@ -134,6 +134,7 @@ with preprocessing:
     # df_min = X.min()
     # df_max = X.max()
 
+    
     # #NORMALISASI NILAI X
     # scaler = MinMaxScaler()
     # #scaler.fit(features)
