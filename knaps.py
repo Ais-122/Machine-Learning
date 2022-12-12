@@ -64,8 +64,8 @@ with data_set_description:
     2. Output 2    : Menampilkan hasil prediksi Pasien Tidak Terkena Liver
 
     """)
-    st.write("###### Aplikasi ini untuk : Classification on Fish market (Klasifikasi ikan di Pasar) ")
-    st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/08-Ahlaqul-Karimah/project-data-mining ")
+    st.write("###### Aplikasi ini untuk : Classification on Indian Liver Patient (Klasifikasi Pasien Liver India) ")
+    st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/Ais-122/Machine-Learning ")
 
 with upload_data:
 
