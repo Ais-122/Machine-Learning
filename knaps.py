@@ -236,16 +236,16 @@ with modeling:
 with implementation:
     with st.form("my_form"):
         st.subheader("Implementasi")
-        Age = st.number_input('Masukkan berat ikan (Weight) : ')
-        Gender = st.number_input('Masukkan panjang vertikal ikan (Length1) : ')
-        Total_Bilirubin = st.number_input('Masukkan tinggi ikan (Height) : ')
-        Direct_Bilirubin = st.number_input('Masukkan lebar ikan (Width) : ')
-        #Alkaline_Phosphotase = st.number_input('Masukkan lebar ikan (Width) : ')
-        Alamine_Aminotransferase = st.number_input('Masukkan lebar ikan (Width) : ')
-        Aspartate_Aminotransferase = st.number_input('Masukkan lebar ikan (Width) : ')
-        Total_Protiens = st.number_input('Masukkan lebar ikan (Width) : ')
-        Albumin = st.number_input('Masukkan lebar ikan (Width) : ')
-        Albumin_And_Globulin_Ratio = st.number_input('Masukkan lebar ikan (Width) : ')
+        Age = st.number_input('Masukkan berat ikan (Age) : ')
+        Gender = st.number_input('Masukkan panjang vertikal ikan (Gender) : ')
+        Total_Bilirubin = st.number_input('Masukkan tinggi ikan (Total_Bilirubin) : ')
+        Direct_Bilirubin = st.number_input('Masukkan lebar ikan (Direct_Bilirubin) : ')
+        Alkaline_Phosphotase = st.number_input('Masukkan lebar ikan (Alkaline_Phosphotase) : ')
+        Alamine_Aminotransferase = st.number_input('Masukkan lebar ikan (Alamine_Aminotransferase) : ')
+        Aspartate_Aminotransferase = st.number_input('Masukkan lebar ikan (Aspartate_Aminotransferase) : ')
+        Total_Protiens = st.number_input('Masukkan lebar ikan (Total_Protiens) : ')
+        Albumin = st.number_input('Masukkan lebar ikan (Albumin) : ')
+        Albumin_And_Globulin_Ratio = st.number_input('Masukkan lebar ikan (Albumin_And_Globulin_Ratio) : ')
         
         model = st.selectbox('Pilihlah model yang akan anda gunakan untuk melakukan prediksi?',
                 ('Gaussian Naive Bayes', 'K-NN', 'Decision Tree'))
@@ -257,7 +257,7 @@ with implementation:
                 Gender,
                 Total_Bilirubin,
                 Direct_Bilirubin,
-                #Alkaline_Phosphotase,
+                Alkaline_Phosphotase,
                 Alamine_Aminotransferase,
                 Aspartate_Aminotransferase,
                 Total_Protiens,
