@@ -33,33 +33,36 @@ with data_set_description:
     st.write("""3. Total_Bilirubin (Bilirubin Total) :
     Cek bilirubin total adalah suatu pemeriksaan yang dilakukan untuk mengukur jumlah total bilirubin yang ada di dalam darah. Tes ini bertujuan untuk mengevaluasi fungsi hati atau membantu mendiagnosis anemia yang disebabkan oleh kerusakan sel darah merah (anemia hemolitik).
     """)
-    st.write("""4. length1 (Panjang2) :
-    panjang2 : panjang ikan yang ada  di dataset
+    st.write("""4. Direct_Bilirubin (Bilirubin Direk) :
+    Bilirubin direk adalah bentuk larut air yang dikeluarkan dari hati. Peningkatan kadar bilirubin direk sering menunjukkan kondisi seperti: Virus hepatitis.
     """)
-    st.write("""5. length2 (Panjang3) :
-    panjang3 : panjang ikan yang ada  di dataset
+    st.write("""5. Alkaline_Phosphotase (Fosfatase Alkali) :
+    Salah satu enzim hidrolase yang terutama ditemukan pada sebagian besar organ tubuh, terutama dalam jumlah besar di hati, tulang, dan plasenta. Enzim ini berfungsi memindahkan gugus fosfat.
     """)
-    st.write("""6. height (Tinggi) :
-    tinggi : tinggi ikan yang ada di sataset
+    st.write("""6. Alamine_Aminotransferase (Transaminase alanina) :
+    Alanin transaminase (ALT), atau yang sering dikenal sebagai serum glutamic pyruvic transaminase (SGPT), merupakan enzim yang berguna dalam proses metabolisme protein dalam tubuh. Jika hati tidak berfungsi dengan baik, ALT akan dilepaskan ke dalam darah sehingga kadar ALT dalam darah mengalami peningkatan.
     """)
-    st.write("""7. width (Lrbar) :
-    Output (keluaran)
+    st.write("""7. Aspartate_Aminotransferase (Transaminase aspartat) :
+    Aspartate aminotransferase merupakan enzim yang terdapat di berbagai jaringan, terutama hati, otot lurik dan otot jantung. Peningkatan aktivitas AST dapat menjadi penanda yang baik adanya kerusakan jaringan lunak.
     """)
-    st.write("""Menggunakan Kolom (input) :
-    precipitation
-    tempmax * tempmin
-    wind
+    st.write("""8. Total_Protiens (Total Protein) :
+    Tes protein total dilakukan untuk mengukur jumlah total dua jenis protein pada tubuh, yaitu albumin dan globulin.
     """)
-    st.write("""Mengklasifikasi ikan di pasar   (output) :
+    st.write("""9. Albumin (Albumin) :
+    Albumin adalah cairan infus yang digunakan untuk mengatasi hipoalbuminemia, yaitu rendahnya kadar albumin dalam darah.
+    """)
+    st.write("""10. Albumin_and_Globulin_Ratio ( Rasio albumin dan globulin) :
+    Rasio albumin/globulin adalah perbandingan albumin dengan globulin, yang merupakan konstituen utama protein yang ditemukan dalam darah. Rasio yang abnormal terlihat ketika kadar albumin atau globulin meningkat atau menurun. Rasio abnormal terlihat pada berbagai gangguan, termasuk penyakit ginjal dan hati.
+    """)
+    st.write("""11. Dataset :
+    Dataset ini merupakan output dari prediksi penyakit liver dengan output 1 : Terkena Liver, 2 : Tidak terkena liver.
+    """)
     
-    1. Bream    : istilah umum bagi sejumlah spesies ikan air tawar dan ikan laut dari beragam genus yang meliputi: Abramis (misalnya A. brama, terkadang disebut bream air tawar).
-    2. Parkki   : 
-    3. Perch    : merupakan spesies ikan yang berwarna perak dengan semburat biru. Mereka memiliki mata hitam gelap yang khas dengan cincin luar berwarna kuning cerah.
-    4. Pike     : ikan dengan bentuk Mulut dan hidung berbentuk moncong dengan gigi terlihat mencolok banyak di rahang. Sirip kekuningan atau coklat kemerahan, punggung, dubur, dan ekor dengan bintik-bintik gelap menyebar. Biasanya ditemukan di air tawar meskipun baru-baru ditemukan hidup dalam air dengan kadar garam yang sedikit lebih rendah dari laut.
-    5. Roach    : merupakan ikan air tawar yang berasal dari perairan di wilayah Eropa dan Asia. Ikan jenis ini mampu hidup di perairan payau. Rutilus ritilus adalah jenis ikan omnivora yang tersebar luas di wilayah Eropa dan menjadi invasif di wilayah Irlandia dan Italia.
-    6. Smelt    : sejenis ikan kecil yang dipakai sebagai umpan.
-    7. Whitefish: adalah satu istilah perikanan yang merujuk kepada beberapa spesies ikan demersal dengan sirip, khususnya kod (Gadus morhua), whiting (Merluccius bilinearis), dan haddock (Melanogrammus aeglefinus).
+    st.write("""Mengklasifikasi pasien liver (output) :
     
+    1. Output 1    : Menampilkan hasil prediksi Pasien Terkena Liver
+    2. Output 2    : Menampilkan hasil prediksi Pasien Tidak Terkena Liver
+
     """)
     st.write("###### Aplikasi ini untuk : Classification on Fish market (Klasifikasi ikan di Pasar) ")
     st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/08-Ahlaqul-Karimah/project-data-mining ")
@@ -234,7 +237,7 @@ with implementation:
     with st.form("my_form"):
         st.subheader("Implementasi")
         Age = st.number_input('Masukkan umur (Age) : ')
-        Gender = st.number_input('Masukkan jenis kelamin berupa angka 0 : Laki-laki, 1 : Perempuan (Gender) : ')
+        Gender = st.number_input('Masukkan jenis kelamin berupa angka 1 : Laki-laki, 0 : Perempuan (Gender) : ')
         Total_Bilirubin = st.number_input('Masukkan total bilirubin dalam darah - Berupa angka desimal (Total_Bilirubin) : ')
         Direct_Bilirubin = st.number_input('Masukkan direct bilirubin - Berupa angka desimal (Direct_Bilirubin) : ')
         Alkaline_Phosphotase = st.number_input('Masukkan Alkaline phosphotase - Berupa angka desimal (Alkaline_Phosphotase) : ')
