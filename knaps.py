@@ -236,16 +236,16 @@ with modeling:
 with implementation:
     with st.form("my_form"):
         st.subheader("Implementasi")
-        Age = st.number_input('Masukkan berat ikan (Age) : ')
-        Gender = st.number_input('Masukkan panjang vertikal ikan (Gender) : ')
-        Total_Bilirubin = st.number_input('Masukkan tinggi ikan (Total_Bilirubin) : ')
-        Direct_Bilirubin = st.number_input('Masukkan lebar ikan (Direct_Bilirubin) : ')
-        Alkaline_Phosphotase = st.number_input('Masukkan lebar ikan (Alkaline_Phosphotase) : ')
-        Alamine_Aminotransferase = st.number_input('Masukkan lebar ikan (Alamine_Aminotransferase) : ')
-        Aspartate_Aminotransferase = st.number_input('Masukkan lebar ikan (Aspartate_Aminotransferase) : ')
-        Total_Protiens = st.number_input('Masukkan lebar ikan (Total_Protiens) : ')
-        Albumin = st.number_input('Masukkan lebar ikan (Albumin) : ')
-        Albumin_And_Globulin_Ratio = st.number_input('Masukkan lebar ikan (Albumin_And_Globulin_Ratio) : ')
+        Age = st.number_input('Masukkan umur (Age) : ')
+        Gender = st.number_input('Masukkan jenis kelamin berupa angka 0 : Laki-laki, 1 : Perempuan (Gender) : ')
+        Total_Bilirubin = st.number_input('Masukkan total bilirubin dalam darah - Berupa angka desimal (Total_Bilirubin) : ')
+        Direct_Bilirubin = st.number_input('Masukkan direct bilirubin - Berupa angka desimal (Direct_Bilirubin) : ')
+        Alkaline_Phosphotase = st.number_input('Masukkan Alkaline phosphotase - Berupa angka desimal (Alkaline_Phosphotase) : ')
+        Alamine_Aminotransferase = st.number_input('Masukkan Alamine Aminotransferase - Berupa angka desimal (Alamine_Aminotransferase) : ')
+        Aspartate_Aminotransferase = st.number_input('Masukkan Aspartate Aminotransferase - Berupa angka desimal (Aspartate_Aminotransferase) : ')
+        Total_Protiens = st.number_input('Masukkan Total Protiens - Berupa angka desimal (Total_Protiens) : ')
+        Albumin = st.number_input('Masukkan ALbumin - Berupa angka desimal (Albumin) : ')
+        Albumin_And_Globulin_Ratio = st.number_input('Masukkan Albumin dan Globulin Ratio - Berupa angka desimal(Albumin_And_Globulin_Ratio) : ')
         
         model = st.selectbox('Pilihlah model yang akan anda gunakan untuk melakukan prediksi?',
                 ('Gaussian Naive Bayes', 'K-NN', 'Decision Tree'))
