@@ -257,7 +257,7 @@ with implementation:
                 Gender,
                 Total_Bilirubin,
                 Direct_Bilirubin,
-                Alkaline_Phosphotase,
+                #Alkaline_Phosphotase,
                 Alamine_Aminotransferase,
                 Aspartate_Aminotransferase,
                 Total_Protiens,
