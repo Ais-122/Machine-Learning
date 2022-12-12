@@ -240,7 +240,7 @@ with implementation:
         Gender = st.number_input('Masukkan panjang vertikal ikan (Length1) : ')
         Total_Bilirubin = st.number_input('Masukkan tinggi ikan (Height) : ')
         Direct_Bilirubin = st.number_input('Masukkan lebar ikan (Width) : ')
-        Alkaline_Phosphotase = st.number_input('Masukkan lebar ikan (Width) : ')
+        #Alkaline_Phosphotase = st.number_input('Masukkan lebar ikan (Width) : ')
         Alamine_Aminotransferase = st.number_input('Masukkan lebar ikan (Width) : ')
         Aspartate_Aminotransferase = st.number_input('Masukkan lebar ikan (Width) : ')
         Total_Protiens = st.number_input('Masukkan lebar ikan (Width) : ')
