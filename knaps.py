@@ -69,7 +69,7 @@ with data_set_description:
 
 with upload_data:
 
-    df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/indian_liver_patient.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/water_potability.csv')
     st.dataframe(df)
 
 with preprocessing:
