@@ -30,7 +30,31 @@ with data_set_description:
     st.write("""2. Gender (Jenis Kelamin) : 
     Gender atau jantina adalah serangkaian karakteristik yang terikat kepada dan membedakan maskulinitas dan femininitas. Karakteristik tersebut dapat mencakup jenis kelamin, hal yang ditentukan berdasarkan jenis kelamin, atau identitas gender.
     """)
-        st.write("""11. Dataset :
+    st.write("""3. Total_Bilirubin (Bilirubin Total) :
+    Cek bilirubin total adalah suatu pemeriksaan yang dilakukan untuk mengukur jumlah total bilirubin yang ada di dalam darah. Tes ini bertujuan untuk mengevaluasi fungsi hati atau membantu mendiagnosis anemia yang disebabkan oleh kerusakan sel darah merah (anemia hemolitik).
+    """)
+    st.write("""4. Direct_Bilirubin (Bilirubin Direk) :
+    Bilirubin direk adalah bentuk larut air yang dikeluarkan dari hati. Peningkatan kadar bilirubin direk sering menunjukkan kondisi seperti: Virus hepatitis.
+    """)
+    st.write("""5. Alkaline_Phosphotase (Fosfatase Alkali) :
+    Salah satu enzim hidrolase yang terutama ditemukan pada sebagian besar organ tubuh, terutama dalam jumlah besar di hati, tulang, dan plasenta. Enzim ini berfungsi memindahkan gugus fosfat.
+    """)
+    st.write("""6. Alamine_Aminotransferase (Transaminase alanina) :
+    Alanin transaminase (ALT), atau yang sering dikenal sebagai serum glutamic pyruvic transaminase (SGPT), merupakan enzim yang berguna dalam proses metabolisme protein dalam tubuh. Jika hati tidak berfungsi dengan baik, ALT akan dilepaskan ke dalam darah sehingga kadar ALT dalam darah mengalami peningkatan.
+    """)
+    st.write("""7. Aspartate_Aminotransferase (Transaminase aspartat) :
+    Aspartate aminotransferase merupakan enzim yang terdapat di berbagai jaringan, terutama hati, otot lurik dan otot jantung. Peningkatan aktivitas AST dapat menjadi penanda yang baik adanya kerusakan jaringan lunak.
+    """)
+    st.write("""8. Total_Protiens (Total Protein) :
+    Tes protein total dilakukan untuk mengukur jumlah total dua jenis protein pada tubuh, yaitu albumin dan globulin.
+    """)
+    st.write("""9. Albumin (Albumin) :
+    Albumin adalah cairan infus yang digunakan untuk mengatasi hipoalbuminemia, yaitu rendahnya kadar albumin dalam darah.
+    """)
+    st.write("""10. Albumin_and_Globulin_Ratio ( Rasio albumin dan globulin) :
+    Rasio albumin/globulin adalah perbandingan albumin dengan globulin, yang merupakan konstituen utama protein yang ditemukan dalam darah. Rasio yang abnormal terlihat ketika kadar albumin atau globulin meningkat atau menurun. Rasio abnormal terlihat pada berbagai gangguan, termasuk penyakit ginjal dan hati.
+    """)
+    st.write("""11. Dataset :
     Dataset ini merupakan output dari prediksi penyakit liver dengan output 1 : Terkena Liver, 2 : Tidak terkena liver.
     """)
     
@@ -45,7 +69,7 @@ with data_set_description:
 
 with upload_data:
 
-    df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/water_potability.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/indian_liver_patient.csv')
     st.dataframe(df)
 
 with preprocessing:
